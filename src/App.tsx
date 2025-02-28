@@ -3,7 +3,7 @@ import { AppRouter } from "@/routes/AppRouter"
 
 const App: React.FC = () => {
   return (
-    <div className='App'>
+    <div className='App overflow-hidden'>
       <AppRouter />
     </div>
   )
