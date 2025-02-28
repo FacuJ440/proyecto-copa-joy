@@ -73,4 +73,13 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  @font-face {
+    font-family: "Edo";
+    src: url("/fonts/edo.ttf");
+  }
+  @font-face {
+    font-family: "OpenSans";
+    src: url("/fonts/OpenSans-Regular.ttf");
+  }
 }
