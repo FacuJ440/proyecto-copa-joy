@@ -18,15 +18,15 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Menú Desktop a partir de lg */}
-        <div className='z-10 hidden items-center space-x-4 text-white lg:block'>
-          <Button asChild variant='ghost'>
+        <div className='z-10 hidden items-center space-x-4 font-edo lg:block'>
+          <Button asChild variant='secondary' className='bg-[#91007B] text-white hover:text-black'>
             <Link to='/dashboard'>Sobre el Torneo</Link>
           </Button>
-          <Button asChild variant='ghost'>
-            <Link to='/reclamos'>Imágenes</Link>
+          <Button asChild variant='secondary' className='bg-[#91007B] text-white hover:text-black'>
+            <Link to='/reclamos'>Imagenes</Link>
           </Button>
-          <Button asChild variant='ghost'>
-            <Link to='/dashboard'>Cómo Publicitar</Link>
+          <Button asChild variant='secondary' className='bg-[#91007B] text-white hover:text-black'>
+            <Link to='/dashboard'>Como Publicitar</Link>
           </Button>
         </div>
 
@@ -36,17 +36,23 @@ const Navbar: React.FC = () => {
             <SheetTrigger className='' onClick={() => setOpen(true)}>
               <Menu className='h-6 w-6 text-black' />
             </SheetTrigger>
-            <SheetContent side='right' className='bg-gray-900 text-white'>
-              <div className='mt-10 flex flex-col space-y-4'>
-                <Link to='/dashboard' className='text-lg' onClick={() => setOpen(false)}>
-                  Sobre el Torneo
-                </Link>
-                <Link to='/reclamos' className='text-lg' onClick={() => setOpen(false)}>
-                  Imágenes
-                </Link>
-                <Link to='/dashboard' className='text-lg' onClick={() => setOpen(false)}>
-                  Cómo Publicitar
-                </Link>
+            <SheetContent side='right' className='bg-[#004AAD] font-edo text-white'>
+              <div className='mt-10 flex flex-col space-y-10'>
+                <Button variant='ghost' className='flex justify-start'>
+                  <Link to='/dashboard' className='text-xl' onClick={() => setOpen(false)}>
+                    Sobre el Torneo
+                  </Link>
+                </Button>
+                <Button variant='ghost' className='flex justify-start'>
+                  <Link to='/reclamos' className='text-xl' onClick={() => setOpen(false)}>
+                    Imagenes
+                  </Link>
+                </Button>
+                <Button variant='ghost' className='flex justify-start'>
+                  <Link to='/dashboard' className='text-xl' onClick={() => setOpen(false)}>
+                    Como Publicitar
+                  </Link>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>

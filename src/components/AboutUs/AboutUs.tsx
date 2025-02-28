@@ -12,7 +12,10 @@ const AboutUs: React.FC = () => {
         className='absolute -right-40 top-44 w-64 md:-right-48 md:w-96 lg:-right-80 lg:top-28 lg:w-[600px]'
         src={NetBall}
       ></img>
-      <div className='mt-30 flex h-96 w-3/4 flex-col items-center gap-4 px-3 py-48 text-center text-white md:h-full md:px-6 lg:gap-10 lg:px-20 xl:py-56 2xl:px-36 2xl:py-60'>
+      <div
+        className='mt-30 flex h-96 w-3/4 flex-col items-center gap-4 px-3 py-48 text-center text-white transition-all md:h-full md:px-6 lg:gap-10 lg:px-20 xl:py-56 2xl:px-36 2xl:py-60'
+        data-aos='fade-right'
+      >
         <h1 className='font-edo text-2xl md:text-5xl lg:text-6xl'>Sobre Nosotros</h1>
         <p className='font-openSans text-xs md:text-2xl lg:text-3xl'>
           La Copa Universitaria es mucho más que un torneo de fútbol 11, es una competencia de alto nivel, diseñada para
