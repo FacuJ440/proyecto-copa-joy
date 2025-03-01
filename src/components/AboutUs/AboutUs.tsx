@@ -7,7 +7,7 @@ import PlayerPurple from "@/assets/player_purple.svg"
 
 const AboutUs: React.FC = () => {
   return (
-    <div className='relative'>
+    <div className='relative overflow-hidden'>
       <img
         className='absolute -top-20 -z-10 w-full -rotate-90 md:-top-96 lg:-top-[550px] lg:h-[2000px]'
         src={BorderRose}
