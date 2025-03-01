@@ -8,6 +8,8 @@ import PlayerImg from "@/assets/player_black.svg"
 import { AboutUs } from "@/components/AboutUs"
 import { Timeline } from "@/components/Timeline"
 import { Images } from "@/components/Images"
+import { Publish } from "@/components/Publish"
+import Footer from "@/components/layout/Footer"
 
 const HomePage: React.FC = () => {
   return (
@@ -35,8 +37,8 @@ const HomePage: React.FC = () => {
         <AboutUs />
         <Timeline />
         <Images />
-        <Navbar />
-        <Navbar />
+        <Publish />
+        <Footer />
       </div>
     </>
   )
