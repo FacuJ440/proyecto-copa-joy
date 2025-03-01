@@ -7,6 +7,7 @@ import SplashRose from "@/assets/splash_rose.svg"
 import PlayerImg from "@/assets/player_black.svg"
 import { AboutUs } from "@/components/AboutUs"
 import { Timeline } from "@/components/Timeline"
+import { Images } from "@/components/Images"
 
 const HomePage: React.FC = () => {
   return (
@@ -33,6 +34,7 @@ const HomePage: React.FC = () => {
         </div>
         <AboutUs />
         <Timeline />
+        <Images />
         <Navbar />
         <Navbar />
       </div>
