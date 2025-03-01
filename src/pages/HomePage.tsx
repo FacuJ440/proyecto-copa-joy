@@ -6,12 +6,13 @@ import SplashGreen from "@/assets/splash_green.svg"
 import SplashRose from "@/assets/splash_rose.svg"
 import PlayerImg from "@/assets/player_black.svg"
 import { AboutUs } from "@/components/AboutUs"
+import { Timeline } from "@/components/Timeline"
 
 const HomePage: React.FC = () => {
   return (
     <>
       <div className='relative'>
-        <Navbar></Navbar>
+        <Navbar />
         <img
           src={BorderBlue}
           className='absolute -right-32 -top-28 -z-10 md:-right-52 md:-top-56 lg:-right-32 lg:-top-72'
@@ -28,8 +29,8 @@ const HomePage: React.FC = () => {
           </div>
           <img src={PlayerImg} className='z-10 h-64 md:h-96 lg:h-[700px]' />
         </div>
-        <AboutUs></AboutUs>
-        <Navbar></Navbar>
+        <AboutUs />
+        <Timeline />
         <Navbar></Navbar>
         <Navbar></Navbar>
         <Navbar></Navbar>

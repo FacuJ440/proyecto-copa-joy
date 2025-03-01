@@ -4,6 +4,9 @@ import Logo from "@/assets/logo_copa.svg"
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet"
 import { Menu } from "lucide-react"
 import { useState } from "react"
+import { Info } from "lucide-react"
+import { Image } from "lucide-react"
+import { MessageCircleQuestion } from "lucide-react"
 
 const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false)
@@ -36,23 +39,29 @@ const Navbar: React.FC = () => {
             <SheetTrigger className='' onClick={() => setOpen(true)}>
               <Menu className='h-6 w-6 text-black' />
             </SheetTrigger>
-            <SheetContent side='right' className='bg-[#004AAD] font-edo text-white'>
+            <SheetContent side='right' className='bg-gray-600 font-edo text-white'>
               <div className='mt-10 flex flex-col space-y-10'>
                 <Button variant='ghost' className='flex justify-start'>
-                  <Link to='/dashboard' className='text-xl' onClick={() => setOpen(false)}>
+                  <Link to='/dashboard' className='flex items-center gap-2 text-xl' onClick={() => setOpen(false)}>
+                    <Info />
                     Sobre el Torneo
                   </Link>
                 </Button>
                 <Button variant='ghost' className='flex justify-start'>
-                  <Link to='/reclamos' className='text-xl' onClick={() => setOpen(false)}>
+                  <Link to='/reclamos' className='flex items-center gap-2 text-xl' onClick={() => setOpen(false)}>
+                    <Image />
                     Imagenes
                   </Link>
                 </Button>
                 <Button variant='ghost' className='flex justify-start'>
-                  <Link to='/dashboard' className='text-xl' onClick={() => setOpen(false)}>
+                  <Link to='/dashboard' className='flex items-center gap-2 text-xl' onClick={() => setOpen(false)}>
+                    <MessageCircleQuestion />
                     Como Publicitar
                   </Link>
                 </Button>
+              </div>
+              <div className='mt-64'>
+                <img src={Logo} alt='' />
               </div>
             </SheetContent>
           </Sheet>
