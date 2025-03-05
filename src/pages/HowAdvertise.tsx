@@ -10,29 +10,29 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs"
 
 const HowAdvertise = () => {
   return (
-    <div>
-      <Tabs defaultValue='account' className='w-[400px]'>
-        <TabsList>
+    <div className=''>
+      <Tabs defaultValue='account' className='w-full'>
+        <TabsList className='font-edo space-x-2 space-y-2 bg-slate-300 px-4 py-4 lg:flex lg:flex-row lg:justify-center lg:gap-4 lg:space-x-0 lg:space-y-0'>
           <TabsTrigger value='bandera'>
-            <Button>Bandera Publicitaria</Button>
+            <Button className='bg-[#006738] lg:w-44'>Bandera Publicitaria</Button>
           </TabsTrigger>
           <TabsTrigger value='redes'>
-            <Button>Redes Sociales</Button>
+            <Button className='bg-[#91007b] lg:w-44'>Redes Sociales</Button>
           </TabsTrigger>
           <TabsTrigger value='entradas'>
-            <Button>Entradas</Button>
+            <Button className='bg-[#0769b2] lg:w-44'>Entradas</Button>
           </TabsTrigger>
           <TabsTrigger value='backing'>
-            <Button>Backing</Button>
+            <Button className='bg-[#eb7a19] lg:w-44'>Backing</Button>
           </TabsTrigger>
           <TabsTrigger value='camisetas'>
-            <Button>Camisetas</Button>
+            <Button className='bg-[#2f0b62] lg:w-44'>Camisetas</Button>
           </TabsTrigger>
           <TabsTrigger value='main'>
-            <Button>Main Sponsor</Button>
+            <Button className='bg-[#dd0047] lg:w-44'>Main Sponsor</Button>
           </TabsTrigger>
           <TabsTrigger value='paquetes'>
-            <Button>Paquetes</Button>
+            <Button className='bg-black lg:w-44'>Paquetes</Button>
           </TabsTrigger>
         </TabsList>
         <TabsContent value='bandera'>
