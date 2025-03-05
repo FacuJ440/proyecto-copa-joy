@@ -15,7 +15,7 @@ const events: Event[] = [
     title: "Cuadrangular de pretemporada",
     description: "Se organizo un cuadrangular en las canchas de Don Peto, con la presencia de 4 equipos de la liga:",
     details: [
-      "Equipos: PGO, Almendra, Agrimensor y Celtic.",
+      "Equipos: F90, Almendro, Agrimensura y Celtic.",
       "Formato: Todos contra todos.",
       "Duración: 3 semanas.",
       "Campeón: Agrimensura."
@@ -27,8 +27,8 @@ const events: Event[] = [
     description:
       "La organización decidió agrandar el número a 8 equipos y testear un torneo mas grande. Por primera vez se organizo en Complejo Lopez, con equipos vigentes en la B de la Liga Universitaria.",
     details: [
-      "Equipos: Celtic, Agrimensor, Minaster, Taufick, Aston, Cartel, Itakua, PGO.",
-      "Formato: 2 grupos de 4 equipos, clasifican 2 a semifinales.",
+      "Equipos: Celtic, Agrimensura, Minaster, Tuentifay, Aston, Cardiff, Tablada, F90.",
+      "Formato: 2 grupos de 4 equipos, todos clasifican a llaves eliminatorias.",
       "Campeón: Aston (Ascendió a la A)."
     ]
   },
@@ -36,10 +36,10 @@ const events: Event[] = [
     year: "2024",
     title: "Octagonal Marzo",
     description:
-      "Dado el éxito del octagonal anteriorse organizo un segundo torneo un mes después, pero cambiando el formato.",
+      "Dado el éxito del octagonal anterior se organizó un segundo torneo un mes después, pero cambiando el formato.",
     details: [
-      "Equipos: Celtic, Agrimensor, Minaster, Taufick, Itakua, PGO, Cartel, Vasco de Branco.",
-      "Formato: Todos contra todos.",
+      "Equipos: Celtic, Agrimensura, Minaster, Tuentifay, Aston, Cardiff, Vasco de Branco, F90.",
+      "Formato: Todos contra todos. Seguido de llaves eliminatorias.",
       "Duración: 1 mes.",
       "Campeón: Celtic (Ascendió a la A)."
     ]
@@ -53,8 +53,8 @@ const events: Event[] = [
   },
   {
     year: "2026",
-    title: "Copa y Liga...",
-    description: "Pendiente de información.",
+    title: "Copa y Liga",
+    description: "Próximamente...",
     details: []
   }
 ]
@@ -65,7 +65,7 @@ const Timeline: React.FC = () => {
       {/* Fondo con imágenes */}
       <div className='relative flex items-center justify-center'>
         <img src={BorderGreen} className='absolute top-0 w-full max-w-[3000px]' />
-        <h2 className='relative z-10 mt-20 font-edo text-3xl text-white md:mt-28 md:text-5xl lg:mt-60 lg:text-7xl'>
+        <h2 className='font-edo relative z-10 mt-20 text-3xl text-white md:mt-28 md:text-5xl lg:mt-60 lg:text-7xl'>
           Antecedentes
         </h2>
         <img src={Numeral} className='absolute -left-10 w-24 md:w-44 lg:-left-20 lg:top-16 lg:w-64' />
@@ -77,7 +77,7 @@ const Timeline: React.FC = () => {
           items={events}
           renderItem={(event) => (
             <div className='h-72 rounded-lg bg-white p-5 text-center shadow-lg lg:h-80'>
-              <h3 className='text-xl font-bold'>{event.year}</h3>
+              <h3 className='text-2xl font-bold lg:text-3xl'>{event.year}</h3>
               <h4 className='text-xl font-semibold italic text-[#006738]'>{event.title}</h4>
               <p className='text-sm lg:text-base'>{event.description}</p>
               {event.details.length > 0 && (

@@ -10,7 +10,7 @@ const App: React.FC = () => {
     })
   })
   return (
-    <div className='App overflow-hidden font-openSans'>
+    <div className='App font-openSans overflow-hidden'>
       <AppRouter />
     </div>
   )

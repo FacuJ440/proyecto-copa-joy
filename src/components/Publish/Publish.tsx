@@ -12,7 +12,7 @@ const Publish: React.FC = () => {
           ¿CÓMO PUBLICITAR EN LA <span className='text-black'>COPA UNIVERSITARIA?</span>
         </h2>
         <Button className='mt-5 rounded-md bg-black px-6 py-3 text-xl text-white hover:bg-gray-800 md:mt-8'>
-          <Link to=''>Clickeá acá</Link>
+          <Link to='/como-publicitar'>Clickeá acá</Link>
         </Button>
       </div>
     </div>
