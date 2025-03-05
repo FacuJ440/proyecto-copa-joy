@@ -11,7 +11,7 @@ const Publish: React.FC = () => {
         <h2 className='text-2xl font-bold text-white md:text-4xl lg:text-5xl'>
           ¿CÓMO PUBLICITAR EN LA <span className='text-black'>COPA UNIVERSITARIA?</span>
         </h2>
-        <Button className='mt-5 rounded-md bg-black px-6 py-3 text-xl text-white hover:bg-gray-800 md:mt-8'>
+        <Button className='mt-6 rounded-md bg-black px-6 py-3 text-xl text-white hover:bg-gray-800 md:mt-8'>
           <Link to='/como-publicitar'>Clickeá acá</Link>
         </Button>
       </div>

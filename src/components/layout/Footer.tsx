@@ -4,7 +4,7 @@ import Logo from "@/assets/logo_copa.svg"
 
 const Footer: React.FC = () => {
   return (
-    <div className='relative bottom-0 mt-20 bg-white md:mt-8 lg:mt-64'>
+    <div className='relative bottom-0 bg-white'>
       <div className='container mx-auto flex flex-col items-center justify-between gap-4 py-6 md:flex-row md:gap-0'>
         {/* Logo */}
         <div>
