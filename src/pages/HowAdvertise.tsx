@@ -12,7 +12,7 @@ const HowAdvertise = () => {
   return (
     <div className=''>
       <Tabs defaultValue='account' className='w-full'>
-        <TabsList className='space-x-2 space-y-2 bg-slate-300 px-4 py-4 font-edo lg:flex lg:flex-row lg:justify-center lg:gap-4 lg:space-x-0 lg:space-y-0'>
+        <TabsList className='font-edo space-x-2 space-y-2 bg-slate-300 px-4 py-4 lg:flex lg:flex-row lg:justify-center lg:gap-4 lg:space-x-0 lg:space-y-0'>
           <TabsTrigger value='bandera'>
             <Button className='bg-[#006738] lg:w-44'>Bandera Publicitaria</Button>
           </TabsTrigger>

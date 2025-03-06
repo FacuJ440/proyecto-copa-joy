@@ -1,51 +1,24 @@
-import Court from "@/assets/flag_court.png"
+import ShirtsImage from "@/assets/imagen_camisetas.png"
 
 const Shirts: React.FC = () => {
   return (
     <div className='container mx-auto'>
       <div className='mt-4 px-4 md:mt-10 md:text-lg lg:text-2xl 2xl:text-3xl'>
         <p className=''>
-          <span className='font-bold text-[#91007b]'>Descripción:</span> Publicidad a través de nuestras cuentas de
-          Instagram, TikTok y Youtube, mediante el uso del logo de la marca o menciones.
+          <span className='font-bold text-[#2f0b62]'>Descripción:</span> Espacio publicitario para el logo de las marcas
+          en las camisetas del STAFF, conformado por (numero) personas.
         </p>
         <p className=''>
-          <span className='font-bold text-[#91007b]'>Beneficios:</span> Alcance amplio entre los seguidores, con
-          contenidos atractivos y fáciles de compartir.
+          <span className='font-bold text-[#2f0b62]'>Beneficios:</span> Visibilidad constante dentro del complejo, mayor
+          importancia al ser parte de la vestimenta de los organizadores .
         </p>
       </div>
-      <div className='p-4 md:flex md:gap-4 lg:gap-20'>
-        <div className='grid grid-cols-2 grid-rows-5 gap-2 font-bold text-white'>
-          <div className='row-start-1 flex items-center justify-center rounded bg-[#006738] p-2 lg:p-2'>
-            SECTORES POR CANCHA
-          </div>
-          <div className='row-start-1 flex items-center justify-center rounded bg-[#238742] p-2 lg:p-1'>
-            2 sectores (uno por cada linea de fondo)
-          </div>
-          <div className='row-start-2 flex items-center justify-center rounded bg-[#006738] p-2 lg:p-1'>
-            TOTAL DE CANCHAS
-          </div>
-          <div className='row-start-2 flex items-center justify-center rounded bg-[#238742] p-2 lg:p-1'>4 canchas</div>
-          <div className='row-start-3 flex items-center justify-center rounded bg-[#006738] p-2 lg:p-1'>
-            PARTIDOS POR CANCHA
-          </div>
-          <div className='row-start-3 flex items-center justify-center rounded bg-[#238742] p-2 lg:p-1'>
-            2 partidos por jornada
-          </div>
-          <div className='row-start-4 flex items-center justify-center rounded bg-[#006738] p-2 lg:p-1'>
-            VISIBILIDAD POR SPONSOR
-          </div>
-          <div className='row-start-4 flex items-center justify-center rounded bg-[#238742] p-2 lg:p-1'>
-            Cada sponsor aparece en cada sector
-          </div>
-          <div className='row-start-5 flex items-center justify-center rounded bg-[#006738] p-2 lg:p-1'>
-            EXPOSICIÓN TOTAL
-          </div>
-          <div className='row-start-5 flex items-center justify-center rounded bg-[#238742] p-2 lg:p-1'>
-            8 sectores en cada jornada
-          </div>
-        </div>
-        <div className=''>
-          <img src={Court} alt='Campo de futbol' className='lg:h-[700px]' />
+      <div className='p-4 md:gap-4 lg:gap-20'>
+        <div className='flex flex-col items-center justify-center gap-2'>
+          <img src={ShirtsImage} alt='' />
+          <p className='flex items-center justify-center text-base lg:text-lg'>
+            *La imagen de la camiseta es a modo de ejemplo
+          </p>
         </div>
       </div>
     </div>
