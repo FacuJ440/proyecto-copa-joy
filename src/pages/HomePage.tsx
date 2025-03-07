@@ -1,5 +1,3 @@
-import React from "react"
-import Navbar from "@/components/layout/Navbar"
 import BorderBlue from "@/assets/border_blue.svg"
 import SplashPurple from "@/assets/splash_purple.svg"
 import SplashGreen from "@/assets/splash_green.svg"
@@ -9,19 +7,17 @@ import { AboutUs } from "@/components/AboutUs"
 import { Timeline } from "@/components/Timeline"
 import { Images } from "@/components/Images"
 import { Publish } from "@/components/Publish"
-import Footer from "@/components/layout/Footer"
 
 const HomePage: React.FC = () => {
   return (
     <>
       <div className='relative'>
-        <Navbar />
         <div className='overflow-hidden'>
           <img
             src={BorderBlue}
-            className='absolute -right-32 -top-28 -z-10 md:-right-52 md:-top-56 lg:-right-32 lg:-top-72'
+            className='absolute -right-32 -top-[250px] -z-10 md:-right-52 md:-top-[350px] lg:-right-32 lg:-top-[420px]'
           />
-          <img src={SplashPurple} className='absolute -top-52 left-72 hidden w-52 lg:block 2xl:left-[600px]' />
+          <img src={SplashPurple} className='absolute -top-72 left-72 hidden w-52 lg:block 2xl:left-[600px]' />
           <img src={SplashGreen} className='absolute -right-64 top-[400px] h-52 md:-right-32 lg:block' />
           <img src={SplashRose} className='absolute -left-64 top-[300px] h-52 md:-left-32 lg:block' />
           <div className='z-10 flex flex-row justify-center'>
@@ -34,11 +30,14 @@ const HomePage: React.FC = () => {
             <img src={PlayerImg} className='z-10 h-64 md:h-96 lg:h-[700px]' />
           </div>
         </div>
-        <AboutUs />
-        <Timeline />
-        <Images />
-        <Publish />
-        <Footer />
+        <section id='sobre-torneo'>
+          <AboutUs />
+          <Timeline />
+        </section>
+        <section className='lg:mb-40' id='imagenes'>
+          <Images />
+          <Publish />
+        </section>
       </div>
     </>
   )

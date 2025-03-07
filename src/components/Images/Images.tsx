@@ -12,7 +12,7 @@ const Images: React.FC = () => {
   return (
     <div>
       <div className='relative mt-4 flex items-center justify-center'>
-        <h2 className='relative z-10 mt-20 font-edo text-3xl text-black md:mt-24 md:text-5xl lg:mt-44 lg:text-7xl 2xl:mt-72'>
+        <h2 className='font-edo relative z-10 mt-20 text-3xl text-black md:mt-24 md:text-5xl lg:mt-44 lg:text-7xl 2xl:mt-72'>
           Imagenes
         </h2>
         <img src={SplashBlack} className='absolute -left-52 top-72 w-64 rotate-90 lg:top-96' />

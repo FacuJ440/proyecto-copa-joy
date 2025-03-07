@@ -36,11 +36,11 @@ const AboutUs: React.FC = () => {
           en San Juan.
         </p>
       </div>
-      <div className='mt-8 flex gap-32 px-2 md:px-6 lg:px-20 2xl:px-40'>
+      <div data-aos='fade-right' className='mt-8 flex gap-32 px-2 md:px-6 lg:px-20 2xl:px-40'>
         <div className='lg:w-2/3'>
           <div className='mt-4 flex items-start'>
             <img src={NumberOne} alt='1' className='h-20 w-20 md:h-28 md:w-28 lg:h-36 lg:w-36' />
-            <div className='ml-4'>
+            <div className='ml-4 w-80 md:w-full'>
               <h3 className='mb-1 font-edo md:text-2xl lg:text-4xl'>Duracion y Sede</h3>
               <p className='font-openSans text-sm md:text-xl lg:text-2xl'>
                 El torneo se jugará de <span className='font-bold'>Marzo a Noviembre</span> (9 meses) y tendrá lugar en
