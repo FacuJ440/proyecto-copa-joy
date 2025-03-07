@@ -29,6 +29,7 @@ const Carousel = <T,>({ items, renderItem, autoplay = true, slidesPerView = 1 }:
         1024: { slidesPerView }
       }}
       className='h-80 w-full lg:h-96 2xl:mt-16'
+      data-aos='fade-right'
     >
       {items.map((item, index) => (
         <SwiperSlide key={index}>{renderItem(item, index)}</SwiperSlide>

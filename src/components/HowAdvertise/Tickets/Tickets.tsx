@@ -13,8 +13,8 @@ const Tickets: React.FC = () => {
           visible tanto para el staff como para los asistentes.
         </p>
       </div>
-      <div className='flex flex-col gap-20 font-bold md:flex-row'>
-        <div className='flexitems-center justify-center gap-2'>
+      <div className='gap-20 font-bold md:flex-row'>
+        <div className='flex flex-col items-center justify-center gap-2'>
           <img src={EjemploTicket} alt='' />
           <p className='flex items-center justify-center text-base lg:text-lg'>
             *La imagen de la entrada es a modo de ejemplo.

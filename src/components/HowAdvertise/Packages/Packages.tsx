@@ -26,14 +26,13 @@ const Packages: React.FC = () => {
             style={{ backgroundImage: `url(${CardPackages})` }}
           >
             <div className='relative max-w-xs rounded-md bg-transparent p-6 text-white shadow-lg'>
-              <h2 className='text-center font-edo text-xl'>Paquete Premium</h2>
-              <h3 className='text-center font-edo text-lg'>Total</h3>
+              <h2 className='text-center font-edo text-xl'>Paquete Top</h2>
+              <h3 className='text-center font-edo text-lg'>Visibility</h3>
 
               <ul className='mt-4 list-inside list-disc text-sm'>
                 <li>Banners Publicitarios en Canchas</li>
                 <li>Redes Sociales</li>
                 <li>Backing</li>
-                <li>Camisetas del Staff y Publicidad en Entradas</li>
               </ul>
             </div>
           </div>
@@ -43,14 +42,12 @@ const Packages: React.FC = () => {
               style={{ backgroundImage: `url(${CardPackages})` }}
             >
               <div className='relative max-w-xs rounded-md bg-transparent p-6 text-white shadow-lg'>
-                <h2 className='text-center font-edo text-xl'>Paquete Premium</h2>
-                <h3 className='text-center font-edo text-lg'>Total</h3>
+                <h2 className='text-center font-edo text-xl'>Paquete Digital y</h2>
+                <h3 className='text-center font-edo text-lg'>Media</h3>
 
                 <ul className='mt-4 list-inside list-disc text-sm'>
                   <li>Banners Publicitarios en Canchas</li>
                   <li>Redes Sociales</li>
-                  <li>Backing</li>
-                  <li>Camisetas del Staff y Publicidad en Entradas</li>
                 </ul>
               </div>
             </div>
@@ -62,11 +59,10 @@ const Packages: React.FC = () => {
             style={{ backgroundImage: `url(${CardPackages})` }}
           >
             <div className='relative max-w-xs rounded-md bg-transparent p-6 text-white shadow-lg'>
-              <h2 className='text-center font-edo text-xl'>Paquete Premium</h2>
-              <h3 className='text-center font-edo text-lg'>Total</h3>
+              <h2 className='text-center font-edo text-xl'>Paquete</h2>
+              <h3 className='text-center font-edo text-lg'>Social</h3>
 
               <ul className='mt-4 list-inside list-disc text-sm'>
-                <li>Banners Publicitarios en Canchas</li>
                 <li>Redes Sociales</li>
                 <li>Backing</li>
                 <li>Camisetas del Staff y Publicidad en Entradas</li>
@@ -78,14 +74,11 @@ const Packages: React.FC = () => {
             style={{ backgroundImage: `url(${CardPackages})` }}
           >
             <div className='relative max-w-xs rounded-md bg-transparent p-6 text-white shadow-lg'>
-              <h2 className='text-center font-edo text-xl'>Paquete Premium</h2>
-              <h3 className='text-center font-edo text-lg'>Total</h3>
+              <h2 className='text-center font-edo text-xl'>Paquete Impacto</h2>
+              <h3 className='text-center font-edo text-lg'>Básico</h3>
 
               <ul className='mt-4 list-inside list-disc text-sm'>
-                <li>Banners Publicitarios en Canchas</li>
-                <li>Redes Sociales</li>
-                <li>Backing</li>
-                <li>Camisetas del Staff y Publicidad en Entradas</li>
+                <li>Redes Sociales (Instagram, TikTok y Youtube)</li>
               </ul>
             </div>
           </div>

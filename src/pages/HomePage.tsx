@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
           <AboutUs />
           <Timeline />
         </section>
-        <section id='imagenes'>
+        <section className='lg:mb-40' id='imagenes'>
           <Images />
           <Publish />
         </section>

@@ -15,8 +15,10 @@ const Footer: React.FC = () => {
 
         {/* Botón de marca */}
         <div className='order-last md:order-none'>
-          <Button variant='ghost' className='font-bold'>
-            by Yolk®
+          <Button variant='ghost' className='font-bold text-[#505050]'>
+            <Link target='_blank' to='https://www.instagram.com/yolk.web/'>
+              by Yolk®
+            </Link>
           </Button>
         </div>
 

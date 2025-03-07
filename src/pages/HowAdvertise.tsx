@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import { Backing } from "@/components/HowAdvertise/Backing"
 import { Flag } from "@/components/HowAdvertise/Flag"
 import { MainSponsor } from "@/components/HowAdvertise/MainSponsor"
@@ -11,8 +12,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs"
 const HowAdvertise = () => {
   return (
     <div className=''>
-      <Tabs defaultValue='account' className='w-full'>
-        <TabsList className='font-edo space-x-2 space-y-2 bg-slate-300 px-4 py-4 lg:flex lg:flex-row lg:justify-center lg:gap-4 lg:space-x-0 lg:space-y-0'>
+      <Tabs defaultValue='bandera' className='w-full'>
+        <TabsList className='space-x-2 space-y-2 bg-slate-300 px-4 py-4 font-edo lg:flex lg:flex-row lg:justify-center lg:gap-4 lg:space-x-0 lg:space-y-0'>
           <TabsTrigger value='bandera'>
             <Button className='bg-[#006738] lg:w-44'>Bandera Publicitaria</Button>
           </TabsTrigger>
@@ -35,26 +36,42 @@ const HowAdvertise = () => {
             <Button className='bg-black lg:w-44'>Paquetes</Button>
           </TabsTrigger>
         </TabsList>
+
+        {/* Transición de pestañas con Framer Motion */}
         <TabsContent value='bandera'>
-          <Flag />
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+            <Flag />
+          </motion.div>
         </TabsContent>
         <TabsContent value='redes'>
-          <Social />
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+            <Social />
+          </motion.div>
         </TabsContent>
         <TabsContent value='entradas'>
-          <Tickets />
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+            <Tickets />
+          </motion.div>
         </TabsContent>
         <TabsContent value='backing'>
-          <Backing />
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+            <Backing />
+          </motion.div>
         </TabsContent>
         <TabsContent value='camisetas'>
-          <Shirts />
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+            <Shirts />
+          </motion.div>
         </TabsContent>
         <TabsContent value='main'>
-          <MainSponsor />
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+            <MainSponsor />
+          </motion.div>
         </TabsContent>
         <TabsContent value='paquetes'>
-          <Packages />
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+            <Packages />
+          </motion.div>
         </TabsContent>
       </Tabs>
     </div>

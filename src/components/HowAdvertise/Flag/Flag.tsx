@@ -13,7 +13,7 @@ const Flag: React.FC = () => {
           partidos, frente a jugadores y espectadores.
         </p>
       </div>
-      <div className='p-4 md:flex md:gap-4 lg:gap-20'>
+      <div className='justify-center p-4 md:flex md:gap-4 lg:gap-20'>
         <div className='grid grid-cols-2 grid-rows-5 gap-2 font-bold text-white'>
           <div className='row-start-1 flex items-center justify-center rounded bg-[#006738] p-2 lg:p-2'>
             SECTORES POR CANCHA

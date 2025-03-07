@@ -65,7 +65,7 @@ const Timeline: React.FC = () => {
       {/* Fondo con imágenes */}
       <div className='relative flex items-center justify-center'>
         <img src={BorderGreen} className='absolute top-0 w-full max-w-[3000px]' />
-        <h2 className='font-edo relative z-10 mt-20 text-3xl text-white md:mt-28 md:text-5xl lg:mt-60 lg:text-7xl'>
+        <h2 className='relative z-10 mt-20 font-edo text-3xl text-white md:mt-28 md:text-5xl lg:mt-60 lg:text-7xl'>
           Antecedentes
         </h2>
         <img src={Numeral} className='absolute -left-10 w-24 md:w-44 lg:-left-20 lg:top-16 lg:w-64' />

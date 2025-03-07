@@ -16,7 +16,7 @@ const Shirts: React.FC = () => {
       <div className='p-4 md:gap-4 lg:gap-20'>
         <div className='flex flex-col items-center justify-center gap-2'>
           <img src={ShirtsImage} alt='' />
-          <p className='flex items-center justify-center text-base lg:text-lg'>
+          <p className='flex items-center justify-center text-base font-bold lg:text-lg'>
             *La imagen de la camiseta es a modo de ejemplo
           </p>
         </div>
